@@ -1,0 +1,18 @@
+\chapter*{Overview of the thesis}
+
+This thesis aims to create a real-time hardware-based SNN that mimics the electrophysiological behavior of an in vivo Biological Neural Network (BNN) to deliver personalized electrical stimulation therapy in case of an ischemic lesion.
+\bigskip\\
+In order to achieve the ultimate goal defined above, I persued the following aims:\\
+\textbf{Aim 1: Characterization of the spontaneous and evoked activity of in-vivo animal models.}\\
+The first objective of this work was to characterize both spontaneous and evoked activity in the rats' brain. Specifically, the spontaneous activity recorded in the premotor area of healthy rats (Rostral Forelimb Area, RFA) was analyzed to serve as the target activity of a biological neural network (BNN) for the tuning of the spiking neural network (SNN). Additionally, the evoked activity in both the somatosensory (S1) and RFA areas was investigated to assess the impact of the lesion in the motor area (Caudal Forelimb Area in the rat, CFA) and the subsequent stimulation protocols, and to be used for future development of this work.\\
+\textbf{Aim 2: Fine-tuning of the parameters of the Spiking Neural Network (SNN).}\\
+Based on the features extracted from the BNN (healthy RFA areas), the parameters of the hardware-based SNN, composed of single-compartment HH neurons with highly biomimetic synapses and noise, were fine-tuned.
+\bigskip
+
+The first chapter of this thesis introduces the context and outlines both traditional and novel solutions to the addressed problem. After presenting the biological models used in neuroscience, the chapter also details artificial models that leverage computational approaches.
+\bigskip
+
+The second chapter partially fulfills Aim 1 of this manuscript and is dedicated to the methods used to characterize the evoked activity of the S1 and RFA areas under consideration. Specifically, the Post-Stimulus Time Histogram trends and PSTH areas were analyzed before the lesion, after the lesion, and after delivering the electroceutical therapy. This investigation was fundamental for understanding how the interaction between S1 and RFA changed after the lesion and the applied stimulation paradigm.
+\bigskip
+
+The third chapter focuses on the tuning process implemented to create an SNN that closely emulates the behavior of the RFA area, representing the BNN. The spontaneous activity of the RFA area in healthy rats was analyzed, and various features of the electrophysiological behavior were extracted to completely fulfill Aim 1. Following this, a subset of rats was selected based on the ISI analysis, and the tuning phase was conducted to reproduce, with the artificial SNN, the average values of these features obtained from the BNN, as proposed by Aim 2.
